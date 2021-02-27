@@ -30,6 +30,8 @@ class _PersegiScreenState extends State<PersegiScreen> {
               children: [
                 TextFormField(
                   controller: _controllerFormSisi,
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(labelText: "Input Sisi"),
                   onChanged: (value) {
                     setState(() {
                       _formSisi = value.isEmpty ? 0 : int.parse(value);
